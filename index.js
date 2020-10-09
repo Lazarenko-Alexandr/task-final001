@@ -12,7 +12,7 @@ require('http')
   if (req.url === '/login') return res.end('Alexandr');
   if (req.url === '/node') return res.end(process.versions.node); 
   if (req.url === '/mirror?x=XYZ') return res.end('XYZ'); 
-  if (req.url === '/day') return res.end(process.day.getDay()); 
+  if (req.url === '/day') return res.end(DD.Data()); 
   
   res.end('Alexandr Lazarenko');
 })

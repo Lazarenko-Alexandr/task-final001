@@ -10,7 +10,7 @@ require('http')
   if (req.url === '/v8') return res.end(process.versions.v8);
   if (req.url === '/package.json') return require('fs').createReadStream('./package.json').pipe(res);
   if (req.url === '/login') return res.end('Alexandr');
-  if (req.url === '/node') return res.end('10.19.0'); 
+  if (req.url === '/node') return res.end(process.node -v); 
   if (req.url === '/mirror?x=XYZ') return res.end('XYZ'); 
   if (req.url === '/day') return res.end('9'); 
   

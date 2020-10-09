@@ -6,7 +6,7 @@
   },
   "main": "index.js",
   "repository": "https://github.com/Lazarenko-Alexandr/task-final001.git",
-  "author": "Alexandr",
+  "author": "Alexandr Lazarenko",
   "license": "MIT",
   "scripts": {
     "start": "node index.js"

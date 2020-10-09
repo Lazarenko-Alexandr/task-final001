@@ -12,10 +12,8 @@ require('http')
   if (req.url === '/login') return res.end('Alexandr');
   if (req.url === '/node') return res.end(process.versions.node); 
   if (req.url === '/mirror?x=XYZ') return res.end('XYZ'); 
-  if (req.url === '/day') return res.end(Day); 
+  if (req.url === '/day') return res.end('09'); 
   
   res.end('Alexandr Lazarenko');
-  Data = new Date();
-  Day = Data.getData();
 })
 .listen(process.env.PORT);

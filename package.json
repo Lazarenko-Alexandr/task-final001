@@ -1,10 +1,18 @@
 {
-  "name": "task-final001",
+  "headers": {
+    "/*":{
+      "X-Author": "itmo287666",
+      "Content-Type" : "text/plain; charset=UTF-8",
+      "Access-Control-Allow-Origin": "*"
+  }},
+  
+    "name": "task-final001",
   "version": "1.0.1",
   "engines": {
     "node": "10.19.0"
   },
-  "main": "index.js",
+  
+    "main": "index.js",
   "repository": "https://github.com/Lazarenko-Alexandr/task-final001.git",
   "author": "Alexandr Lazarenko",
   "license": "MIT",

@@ -18,5 +18,13 @@
   "license": "MIT",
   "scripts": {
     "start": "node index.js"
+  },
+  
+   "main": "index.html",
+  "repository": "https://github.com/Lazarenko-Alexandr/fetch.git",
+  "author": "Alexandr Lazarenko",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.html"
   }
 }

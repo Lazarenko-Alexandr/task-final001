@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Страница HTML5</title><meta charset="utf-8">
+ </head>
+ <body>
+   <div><input type="text" id="inp"></div>
+   <p><div><button id="bt">Получить</button></div>
+   <script>{
+document.querySelector('button')
+    .addEventListener('click', ({ target: t }) => t.textContent = location.href);
+}</script>
+ </body>
+</html>

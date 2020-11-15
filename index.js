@@ -7,12 +7,12 @@ require('http')
     'Access-Control-Allow-Methods': 'GET,POST,DELETE',
     'Access-Control-Allow-Headers': 'Content-Type, Access-Control-Allow-Headers'
 };
-  let url = 'https://lazarenko-alexandr.github.io/fetch/index.html';
+  let url = new URL 'https://lazarenko-alexandr.github.io/fetch/index.html';
   res.writeHead(200, CORS);
   if (req.url === '/login/') return res.end('itmo287666');
   if (req.url === '/sample/') return res.end('function task(x) {return x * Math.pow(x, 2);}');
   if (req.url === '/promise/') return res.end("function task(x) {return new Promise((res, rej) => x < 18 ? rej('no') : res('yes'));}");
-  if (req.url === '/fetch/') return res.alert(url);
+  if (req.url === '/fetch/') return res.end(url);
   
   res.end('itmo287666');
 })
